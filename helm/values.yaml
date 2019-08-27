@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: "spring-boot-helloworld"
+  tag: "v1"
+  pullPolicy: IfNotPresent
+
+deployment:
+  port: 9091
+
+service:
+  type: NodePort
+  port: 9091
+  nodePort: 31000
