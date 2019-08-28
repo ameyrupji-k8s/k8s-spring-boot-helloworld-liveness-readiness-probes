@@ -61,7 +61,7 @@ To delete the docker image that was created: `docker rmi {image_id}`
 
 ## Useful links
 
-- https://github.com/ameyrupji/docker-nginx-static-html-demo
+- https://www.baeldung.com/spring-boot-kubernetes-self-healing-apps
 - https://www.baeldung.com/kubernetes-helm
 - https://medium.com/@pablorsk/kubernetes-helm-node-hello-world-c97d20437abd
 
