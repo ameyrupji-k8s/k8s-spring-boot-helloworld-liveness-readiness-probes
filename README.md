@@ -34,10 +34,10 @@ docker build -t spring-boot-helloworld:v1 .
 `helm lint ./helm`
 
 `helm install --name helloworld ./helm`
+
 `helm ls`
 
 `helm upgrade helloworld ./helm`
-
 
 
 ## Test 

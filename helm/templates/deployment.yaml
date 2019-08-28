@@ -30,7 +30,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /health/
-              port: 9091
+              port: {{ .Values.deployment.port }}
             initialDelaySeconds: 10
             timeoutSeconds: 2
             periodSeconds: 3
@@ -38,7 +38,7 @@ spec:
           livenessProbe:
             httpGet:
               path: /health/
-              port: 9091
+              port: {{ .Values.deployment.port }}
             initialDelaySeconds: 20
             timeoutSeconds: 2
             periodSeconds: 8
