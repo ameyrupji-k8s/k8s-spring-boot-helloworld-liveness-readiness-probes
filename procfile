@@ -1,0 +1,1 @@
+exec java -Dspring.profiles.active=default -jar /helloworld.jar
