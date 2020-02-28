@@ -6,9 +6,11 @@ image:
   pullPolicy: IfNotPresent
 
 deployment:
-  port: 9091
+  name: spring-boot-helloworld
+  port: 8080
 
 service:
+  name: spring-boot-helloworld
   type: NodePort
   port: 9091
   nodePort: 31000
