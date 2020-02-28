@@ -14,16 +14,17 @@ Read more about liveness and readiness probes [here](https://kubernetes.io/docs/
 - Maven
 - Docker
 - Helm
-
+- Tiller on the Kubernetes cluster
+- Kubernetes dashboard running on the Kubernetes cluster
 
 ## System Configuration at time of test
 
-- macOS Mojave - Version 10.14.6
-- IntelliJ CE - Version CE 2019.2
+- macOS Catalina - Version 10.15.3 (19D76)
+- IntelliJ CE - Version CE 2019.3
 - Maven - Version 3.6.1
-- Docker Desktop - Version 2.1.0.1 (37199)
-- Kubernetes - 
-- Helm - Version 
+- Docker Desktop - Version 2.2.0.3 (42716)
+- Kubernetes - v1.15.5
+- Helm - v2.14.3
 
 ## Initial Setup
 
