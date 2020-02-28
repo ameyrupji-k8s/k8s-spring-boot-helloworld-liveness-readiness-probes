@@ -1,3 +1,6 @@
+| [◂ Previous](https://github.com/ameyrupji-k8s/k8s-spring-boot-helloworld) |
+|-----|
+
 # k8s-spring-boot-helloworld-liveness-readiness-probes
 
 Taking the Basic Hello World Application in Spring Boot! further. This example creates a docker container containing a Spring Boot application with a Controller that returns "Hello World!" which gets deployed to a kubernetes luster using helm.
@@ -65,3 +68,6 @@ To delete the docker image that was created: `docker rmi {image_id}`
 - https://www.baeldung.com/kubernetes-helm
 - https://medium.com/@pablorsk/kubernetes-helm-node-hello-world-c97d20437abd
 - https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html
+
+| [Next ▸](https://github.com/ameyrupji-k8s/k8s-spring-boot-helloworld-security-context) |
+|-----|
