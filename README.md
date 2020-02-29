@@ -118,29 +118,37 @@ Alternatively you can also use `upgrade` command with the `--install` flag:
 
 You can see that the pos is in the initializing state through the terminal and the dashboard:
 
-![terminal-list-pods-initializing]()
+![terminal-upgrade-command](images/terminal-upgrade-command.png)
 
-![safari-dashboard-pods-initializing]()
+![terminal-list-pods-initializing](images/terminal-list-pods-initializing.png)
 
-You can see that the pod is started in about 30 seconds and  by going to `http://localhost:31000/helloworld/` and following response will show up:
-
-![safari localhost](images/safari-localhost.png)
+![safari-dashboard-pods-initializing](images/safari-dashboard-pods-initializing.png)
 
 
-Update App using helm command
+You can see that the pod is started in about 30 seconds and  by going to `http://localhost:31000/helloworld/` and following response will show up. The actuator endpoint will also show status as `UP`:
+
+![safari-localhost-helloworld](images/safari-localhost-helloworld.png)
+
+![safari-localhost-actuator-health-up](images/safari-localhost-actuator-health-up.png)
+
+
+Now Update App using helm command
 
 `helm upgrade spring-boot-helloworld ./spring-boot-helloworld-chart/ -f ./spring-boot-helloworld-chart/values.yaml --install --namespace default`
 
-
 View the new pod getting created through the dashboard and the old pod getting cycled out.
 
-![terminal-list-pods-initializing-old-present]()
+![terminal-helm-update-old-present](images/terminal-helm-update-old-present.png)
 
-![safari-dashboard-pods-initializing-old-present]()
+![safari-dashboard-pods-initializing-old-present](images/safari-dashboard-pods-initializing-old-present.png)
+
+Old pod will be deleted eventually to see only one pod on dashboard:
+
+![safari-dashboard-update-complete](images/safari-dashboard-update-complete.png)
 
 View the app again in a browser `http://localhost:31000/helloworld/`:
 
-![safari localhost](images/safari-localhost.png)
+![safari localhost](images/safari-localhost-helloworld.png)
 
 
 ## Cleanup
