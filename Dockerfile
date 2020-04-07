@@ -7,4 +7,6 @@ COPY ./target/com.ameyrupji.helloworld-1.0-SNAPSHOT.jar /helloworld.jar
 # OPTION 2: procfile -
 COPY ./procfile procfile
 RUN chmod 755 /procfile
-CMD /procfile
+
+# Removing exec will break graceful shutdown hooks.
+CMD exec /procfile
